@@ -1,0 +1,57 @@
+
+REST API Customer
+---------------------
+
+GET
+http://localhost:8088/api/v1/customers
+
+POST
+http://localhost:8088/api/v1/customers
+
+{
+    "firstName": "Yaroslav",
+    "lastName": "Klopotenko",
+    "phoneNumber": "0543226455",
+    "address": "Gorbataya Street"
+}
+
+{
+    "firstName": "Sophie",
+    "lastName": "Lagusha",
+    "phoneNumber": "0967811300",
+    "address": "Panasonic Street"
+}
+
+{
+    "firstName": "Igor",
+    "lastName": "Otamansky",
+    "phoneNumber": "0431975582",
+    "address": "Lesovaya Street"
+}
+
+GET
+http://localhost:8088/api/v1/customers/1
+If id does not exist
+http://localhost:8088/api/v1/customers/6
+
+GET
+http://localhost:8088/api/v1/customers/last-entity
+
+PUT
+http://localhost:8088/api/v1/customers/3
+If id does not exist
+http://localhost:8088/api/v1/customers/9
+
+{
+    "firstName": "Roman",
+    "lastName": "Boiko",
+    "phoneNumber": "0874667993",
+    "address": "Lomonosov Street"
+}
+
+DELETE
+http://localhost:8088/api/v1/customers/2
+If id does not exist
+http://localhost:8088/api/v1/customers/9
+
+
